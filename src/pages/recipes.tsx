@@ -5,7 +5,7 @@ const Recipes = () => {
 	return (
 		<Layout>
 			<div className="about-heading">
-				<h1>RECIPES</h1>
+				<h1>Recipes</h1>
 			</div>
 		</Layout>
 	);

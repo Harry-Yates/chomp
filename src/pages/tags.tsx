@@ -5,7 +5,7 @@ const Tags = () => {
 	return (
 		<Layout>
 			<div className="about-heading">
-				<h1>TAGS</h1>
+				<h1>Tags</h1>
 			</div>
 		</Layout>
 	);
