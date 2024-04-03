@@ -1,20 +1,11 @@
 import React from "react";
 import { Link } from "gatsby";
+import Navbar from "../components/Navbar";
 
 const Home = () => {
 	return (
 		<div>
-			<nav>
-				<ul>
-					<li>
-						<Link to="/">Home</Link>
-					</li>
-					<li>
-						<Link to="/about">About</Link>
-					</li>
-				</ul>
-			</nav>
-
+			<Navbar />
 			<h1>HOME</h1>
 		</div>
 	);

@@ -1,29 +1,30 @@
 {
-  "name": "chomp",
-  "version": "1.0.0",
-  "private": true,
-  "description": "chomp",
-  "author": "Harr-Yates",
-  "keywords": [
-    "gatsby"
-  ],
-  "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "gatsby": "^5.13.3",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
-  "devDependencies": {
-    "@types/node": "^20.11.19",
-    "@types/react": "^18.2.55",
-    "@types/react-dom": "^18.2.19",
-    "typescript": "^5.3.3"
-  }
+	"name": "chomp",
+	"version": "1.0.0",
+	"private": true,
+	"description": "chomp",
+	"author": "Harr-Yates",
+	"keywords": [
+		"gatsby"
+	],
+	"scripts": {
+		"develop": "gatsby develop",
+		"dev": "gatsby develop",
+		"start": "gatsby develop",
+		"build": "gatsby build",
+		"serve": "gatsby serve",
+		"clean": "gatsby clean",
+		"typecheck": "tsc --noEmit"
+	},
+	"dependencies": {
+		"gatsby": "^5.13.3",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+	},
+	"devDependencies": {
+		"@types/node": "^20.11.19",
+		"@types/react": "^18.2.55",
+		"@types/react-dom": "^18.2.19",
+		"typescript": "^5.3.3"
+	}
 }
