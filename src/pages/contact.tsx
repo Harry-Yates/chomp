@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Layout from "../components/Layout";
 
-const contact = () => {
+const Contact = () => {
 	return (
 		<Layout>
 			<h1>CONTACT</h1>
@@ -10,4 +10,4 @@ const contact = () => {
 	);
 };
 
-export default contact;
+export default Contact;

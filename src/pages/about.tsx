@@ -1,13 +1,14 @@
 import React from "react";
-import Navbar from "../components/Navbar";
 import Layout from "../components/Layout";
 
-const about = () => {
+const About = () => {
 	return (
 		<Layout>
-			<h1>ABOUT</h1>
+			<div className="about-heading">
+				<h1>ABOUT</h1>
+			</div>
 		</Layout>
 	);
 };
 
-export default about;
+export default About;
