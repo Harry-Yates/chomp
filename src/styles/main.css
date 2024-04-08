@@ -200,7 +200,7 @@ button,
   cursor: pointer;
   appearance: none;
   color: var(--white);
-  background: (var--grey-1000);
+  background: var(--grey-800);
   border: none;
   border-radius: var(--borderRadius);
   letter-spacing: var(--letterSpacing);
