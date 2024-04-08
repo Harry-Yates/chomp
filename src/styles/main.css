@@ -230,7 +230,7 @@ button,
   cursor: pointer;
   appearance: none;
   color: var(--white);
-  background: var(--grey-800);
+  background: var(--grey-900);
   border: none;
   border-radius: var(--borderRadius);
   letter-spacing: var(--letterSpacing);
@@ -494,7 +494,7 @@ form > *:last-child {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--black);
+  background: var(--grey-900);
   color: var(--white);
 }
 
