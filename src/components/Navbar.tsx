@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "gatsby";
-import { FiAlignJustify } from "react-icons/fi";
+import { FiAlignJustify, FiX } from "react-icons/fi"; // Import both icons
 import logo from "../assets/images/logo.png";
 
 const Navbar = () => {
@@ -20,9 +20,11 @@ const Navbar = () => {
 					<button
 						type="button"
 						className="nav-btn"
+						aria-expanded={show} // Improves accessibility
 						onClick={() => setShow(!show)}
 					>
-						<FiAlignJustify />
+						{show ? <FiX /> : <FiAlignJustify />}{" "}
+						{/* Conditional rendering of icon */}
 					</button>
 				</div>
 				<div className={show ? "nav-links show-links" : "nav-links"}>
