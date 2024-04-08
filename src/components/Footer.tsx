@@ -4,7 +4,7 @@ const Footer = () => {
 	return (
 		<footer className="page-footer">
 			<p>
-				&copy; {new Date().getFullYear()} <span>CHOMP</span> Built with Gatsby
+				&copy; {new Date().getFullYear()} <span>CHOMP</span>
 			</p>
 		</footer>
 	);

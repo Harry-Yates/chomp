@@ -1,10 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 import { Link } from "gatsby";
-import { FiAlignJustify, FiX } from "react-icons/fi"; // Import both icons
+import { FiAlignJustify, FiX } from "react-icons/fi";
 import logo from "../assets/images/logo.png";
+
+const navLinks = [
+	{ to: "/", text: "home" },
+	{ to: "/recipes", text: "recipes" },
+	{ to: "/tags", text: "tags" },
+	{ to: "/about", text: "about" },
+];
 
 const Navbar = () => {
 	const [show, setShow] = useState(false);
+
+	const toggleNav = useCallback(() => setShow((prevShow) => !prevShow), []);
 
 	return (
 		<nav className="navbar">
@@ -13,53 +22,31 @@ const Navbar = () => {
 					<Link to="/">
 						<img
 							src={logo}
-							alt="simply recipes"
+							alt="Simply Recipes"
 							style={{ height: "4rem", width: "4rem" }}
 						/>
 					</Link>
 					<button
 						type="button"
 						className="nav-btn"
-						aria-expanded={show} // Improves accessibility
-						onClick={() => setShow(!show)}
+						aria-expanded={show}
+						onClick={toggleNav}
 					>
-						{show ? <FiX /> : <FiAlignJustify />}{" "}
-						{/* Conditional rendering of icon */}
+						{show ? <FiX /> : <FiAlignJustify />}
 					</button>
 				</div>
 				<div className={show ? "nav-links show-links" : "nav-links"}>
-					<Link
-						to="/"
-						className="nav-link"
-						activeClassName="active-link"
-						onClick={() => setShow(false)}
-					>
-						home
-					</Link>
-					<Link
-						to="/recipes"
-						className="nav-link"
-						activeClassName="active-link"
-						onClick={() => setShow(false)}
-					>
-						recipes
-					</Link>
-					<Link
-						to="/tags"
-						className="nav-link"
-						activeClassName="active-link"
-						onClick={() => setShow(false)}
-					>
-						tags
-					</Link>
-					<Link
-						to="/about"
-						className="nav-link"
-						activeClassName="active-link"
-						onClick={() => setShow(false)}
-					>
-						about
-					</Link>
+					{navLinks.map(({ to, text }) => (
+						<Link
+							key={to}
+							to={to}
+							className="nav-link"
+							activeClassName="active-link"
+							onClick={() => setShow(false)}
+						>
+							{text}
+						</Link>
+					))}
 					<div className="nav-link contact-link">
 						<Link to="/contact" className="btn" onClick={() => setShow(false)}>
 							contact

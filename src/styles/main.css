@@ -423,6 +423,7 @@ form > *:last-child {
 .active-link {
   color: var(--primary-500);
 }
+
 .contact-link {
   display: flex;
   justify-content: center;
