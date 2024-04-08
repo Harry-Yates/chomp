@@ -420,6 +420,17 @@ form > *:last-child {
   border-top: 1px solid var(--grey-500);
   transition: var(--transition);
 }
+
+
+.nav-link:first-child{
+  border-top: none;
+}
+
+.nav-link:last-child {
+
+  border-bottom: none
+}
+
 .active-link {
   color: var(--primary-500);
 }
@@ -436,10 +447,12 @@ form > *:last-child {
   .navbar {
     height: 6rem;
   }
+
   .nav-center {
     display: flex;
     align-items: center;
   }
+
   .nav-header {
     padding: 0;
     margin-right: 2rem;
@@ -449,18 +462,21 @@ form > *:last-child {
   .nav-btn {
     display: none;
   }
+
   .nav-links {
     height: auto !important;
     flex-direction: row;
     align-items: center;
     width: 100%;
   }
+
   .nav-link {
     padding: 0;
     border-top: none;
     margin-right: 1rem;
     font-size: 1rem;
   }
+
   .contact-link {
     width: 100%;
     justify-content: flex-end;
@@ -481,15 +497,10 @@ form > *:last-child {
   background: var(--black);
   color: var(--white);
 }
-.page-footer h5 {
-  margin-bottom: 0;
-}
-.page-footer p {
-  margin-bottom: 0;
-}
-.page-footer span,
-.page-footer a {
-  color: var(--primary-500);
+
+.page-footer img {
+  margin-top: 8px;
+  /* max-height: 100%; */
 }
 
 /*#########*/
