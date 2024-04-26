@@ -8,7 +8,7 @@ const Footer = () => {
 			<Link to="/">
 				<img
 					src={logo}
-					alt="Simply Recipes"
+					alt="logo"
 					style={{ height: "2.5rem", width: "2.5rem" }}
 				/>
 			</Link>

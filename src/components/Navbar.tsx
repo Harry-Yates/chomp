@@ -1,13 +1,13 @@
 import React, { useState, useCallback } from "react";
 import { Link } from "gatsby";
 import { FiAlignJustify, FiX } from "react-icons/fi";
-import logo from "../assets/images/logo.png";
+import logo from "../assets/images/logo.png"
 
 const navLinks = [
 	{ to: "/", text: "home" },
 	{ to: "/recipes", text: "recipes" },
 	{ to: "/tags", text: "tags" },
-	{ to: "/about", text: "about" },
+	// { to: "/about", text: "about" },
 ];
 
 const Navbar = () => {
@@ -19,10 +19,10 @@ const Navbar = () => {
 		<nav className="navbar">
 			<div className="nav-center">
 				<div className="nav-header">
-					<Link to="/">
+					<Link to="/" >
 						<img
 							src={logo}
-							alt="Simply Recipes"
+							alt="logo"
 							style={{ height: "4rem", width: "4rem" }}
 						/>
 					</Link>
