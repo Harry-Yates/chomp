@@ -7,7 +7,7 @@ const Home = () => {
 		<Layout>
 			<main className="page">
 				<header className="hero">
-					<StaticImage src="../assets/images/main.jpeg" alt="hero" className="hero-img" placeholder="tracedSVG" layout="fullWidth" >
+					<StaticImage src="../assets/images/main.webp" alt="hero" className="hero-img" placeholder="tracedSVG" layout="fullWidth" >
 					</StaticImage>
 					<div className="hero-container">
 						<div className="hero-text">
