@@ -1,9 +1,21 @@
 import React from "react";
 import Layout from "../components/Layout";
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image";
+import RecipesList from "../components/RecipesList";
+import type { Recipe } from "../types/Recipe";
 
-const About = () => {
+interface AboutProps {
+	data: {
+		allContentfulRecipe: {
+			nodes: Recipe[];
+		};
+	};
+}
+
+const About = ({ data }: AboutProps) => {
+	const recipes = data?.allContentfulRecipe?.nodes ?? [];
+
 	return (
 		<Layout>
 			{/* <SEO title="About" /> */}
@@ -27,12 +39,12 @@ const About = () => {
 						src="../assets/images/about.jpeg"
 						alt="Person Pouring Salt in Bowl"
 						className="about-img"
-						placeholder="blurred"
+						placeholder="none"
 					/>
 				</section>
 				<section className="featured-recipes">
 					<h5>Look at this Awesomesouce!</h5>
-					{/* <RecipesList recipes={recipes} /> */}
+					<RecipesList recipes={recipes} />
 				</section>
 			</main>
 		</Layout>

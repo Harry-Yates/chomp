@@ -1,11 +1,14 @@
 import React from "react";
 import Layout from "../components/Layout";
+import AllRecipes from "../components/AllRecipes";
 
 const Recipes = () => {
 	return (
 		<Layout>
 			<div className="about-heading">
-				<h1>Recipes</h1>
+				<main className="page">
+					<AllRecipes />
+				</main>
 			</div>
 		</Layout>
 	);

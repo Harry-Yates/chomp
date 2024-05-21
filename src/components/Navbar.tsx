@@ -6,8 +6,8 @@ import logo from "../assets/images/logo.png"
 const navLinks = [
 	{ to: "/", text: "home" },
 	{ to: "/recipes", text: "recipes" },
-	{ to: "/tags", text: "tags" },
-	// { to: "/about", text: "about" },
+	// { to: "/tags", text: "tags" },
+	{ to: "/about", text: "about" },
 ];
 
 const Navbar = () => {
