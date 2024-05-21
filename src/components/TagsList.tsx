@@ -1,15 +1,10 @@
-import React from 'react'
-import type { Recipe } from '../types/Recipe'
+import React from 'react';
+import type { RecipesProps } from '../types/Recipe';
 
-interface TagsListProps {
-    recipes: Recipe[];
-}
-
-const TagsList = ({ recipes }: TagsListProps) => {
-
+const TagsList = ({ recipes }: RecipesProps) => {
     return (
         <div>Taglist</div>
-    )
-}
+    );
+};
 
-export default TagsList
+export default TagsList;

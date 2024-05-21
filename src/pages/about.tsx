@@ -3,17 +3,10 @@ import Layout from "../components/Layout";
 import { Link, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image";
 import RecipesList from "../components/RecipesList";
-import type { Recipe } from "../types/Recipe";
+import type { RecipeCollection } from "../types/Recipe";
 
-interface AboutProps {
-	data: {
-		allContentfulRecipe: {
-			nodes: Recipe[];
-		};
-	};
-}
 
-const About = ({ data }: AboutProps) => {
+const About = ({ data }: { data: RecipeCollection }) => {
 	const recipes = data?.allContentfulRecipe?.nodes ?? [];
 
 	return (

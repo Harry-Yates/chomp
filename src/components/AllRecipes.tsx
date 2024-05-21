@@ -2,11 +2,7 @@ import React from 'react'
 import TagsList from './TagsList'
 import RecipesList from './RecipesList'
 import { useStaticQuery, graphql } from 'gatsby'
-import type { Recipe } from '../types/Recipe';
-
-interface AllRecipesProps {
-    recipes: Recipe[];
-}
+import type { Recipe, RecipeCollection } from '../types/Recipe';
 
 const query = graphql`
   query {
@@ -29,18 +25,18 @@ const query = graphql`
     }
   }`
 
-
 const AllRecipes = () => {
-    const data = useStaticQuery(query);
-    const recipes: Recipe[] = data.allContentfulRecipe.nodes;
+  const data: RecipeCollection = useStaticQuery(query);
+  const recipes: Recipe[] = data.allContentfulRecipe.nodes;
 
-    return (
-        <div>
-            <h4>All recipes</h4>
-            <TagsList recipes={recipes} />
-            <RecipesList recipes={recipes} />
-        </div>
-    );
+
+  return (
+    <div>
+      <h4>All recipes</h4>
+      <TagsList recipes={recipes} />
+      <RecipesList recipes={recipes} />
+    </div>
+  );
 };
 
 export default AllRecipes

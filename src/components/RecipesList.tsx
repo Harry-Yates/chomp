@@ -2,13 +2,9 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import type { IGatsbyImageData } from 'gatsby-plugin-image';
-import type { Recipe } from '../types/Recipe';
+import type { RecipesProps } from '../types/Recipe';
 
-interface RecipesListProps {
-    recipes: Recipe[];
-}
-
-const RecipesList = ({ recipes }: RecipesListProps) => {
+const RecipesList = ({ recipes }: RecipesProps) => {
     return (
         <div className='recipes-list'>
             {recipes.map((recipe) => {

@@ -1,8 +1,7 @@
-// src/types/Recipe.ts
 import type { IGatsbyImageData } from 'gatsby-plugin-image';
 
 interface Content {
-	[key: string]: unknown;
+	tags: string[];
 }
 
 export interface Recipe {
@@ -15,4 +14,14 @@ export interface Recipe {
 	featured: boolean;
 	prepTime: number;
 	content: Content;
+}
+
+export interface RecipeCollection {
+	allContentfulRecipe: {
+		nodes: Recipe[];
+	};
+}
+
+export interface RecipesProps {
+	recipes: Recipe[];
 }
