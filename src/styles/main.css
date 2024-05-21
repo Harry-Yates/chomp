@@ -663,6 +663,7 @@ form>*:last-child {
   display: flex;
   flex-direction: column;
   /* background: blue; */
+  margin-bottom: 2rem;
 }
 
 .tags-list {

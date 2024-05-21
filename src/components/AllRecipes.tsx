@@ -5,11 +5,8 @@ import { useStaticQuery, graphql } from 'gatsby'
 import type { Recipe, RecipesQueryResult } from '../types/Recipe';
 
 const query = graphql`
-  query {
-    allContentfulRecipe(
-        sort: {title: ASC}
-        filter: {featured: {eq:true}}
-        ) {
+  {
+    allContentfulRecipe(sort: { fields: title, order: ASC }) {
       nodes {
         id
         title
@@ -23,7 +20,8 @@ const query = graphql`
         }
       }
     }
-  }`
+  }
+`
 
 const AllRecipes = () => {
   const data: RecipesQueryResult = useStaticQuery(query);
@@ -32,7 +30,6 @@ const AllRecipes = () => {
 
   return (
     <div>
-      <h4>All recipes</h4>
       <TagsList recipes={recipes} />
       <RecipesList recipes={recipes} />
     </div>

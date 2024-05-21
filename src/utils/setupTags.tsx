@@ -18,7 +18,7 @@ const setupTags = ({ recipes }: RecipesProps) => {
         const [secondTag] = b;
         return firstTag.localeCompare(secondTag);
     });
-    console.log('Tags:', newTags);
+    // console.log('Tags:', newTags);
 
     return newTags;
 }
