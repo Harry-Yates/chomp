@@ -43,12 +43,33 @@ const About = ({ data }: AboutProps) => {
 					/>
 				</section>
 				<section className="featured-recipes">
-					<h5>Look at this Awesomesouce!</h5>
+					<h5>Try something new</h5>
 					<RecipesList recipes={recipes} />
 				</section>
 			</main>
 		</Layout>
 	);
 };
+
+export const query = graphql`
+  {
+    allContentfulRecipe(
+      sort: { fields: title, order: ASC }
+      filter: { featured: { eq: true } }
+    ) {
+      nodes {
+        id
+        title
+        cookTime
+        prepTime
+        image {
+          gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
+        }
+      }
+    }
+  }
+`
+
+
 
 export default About;
