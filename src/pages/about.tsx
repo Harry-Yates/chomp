@@ -3,10 +3,10 @@ import Layout from "../components/Layout";
 import { Link, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image";
 import RecipesList from "../components/RecipesList";
-import type { RecipeCollection } from "../types/Recipe";
+import type { RecipesQueryResult } from "../types/Recipe";
 
 
-const About = ({ data }: { data: RecipeCollection }) => {
+const About = ({ data }: { data: RecipesQueryResult }) => {
 	const recipes = data?.allContentfulRecipe?.nodes ?? [];
 
 	return (
