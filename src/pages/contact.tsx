@@ -22,13 +22,13 @@ const Contact = ({ data }: ContactProps) => {
 					<article className="contact-info">
 						<h3>Want To Get In Touch?</h3>
 						<p>
-							Four dollar toast biodiesel plaid salvia actually pickled banjo
-							bespoke mlkshk intelligentsia edison bulb synth.
+							We'd love to hear from you! Whether you have questions about our recipes,
+							need cooking tips, or just want to share your culinary experiences, we're here to help.
 						</p>
-						<p>Cardigan prism bicycle rights put a bird on it deep v.</p>
+						<p>Feel free to reach out to us through the contact form.</p>
 						<p>
-							Hashtag swag health goth air plant, raclette listicle fingerstache
-							cold-pressed fanny pack bicycle rights cardigan poke.
+							Our team is dedicated to bringing you the best carnivore recipes and we appreciate your feedback.
+							Let's connect and make your culinary journey even more exciting!
 						</p>
 					</article>
 					<article>
