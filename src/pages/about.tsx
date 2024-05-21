@@ -22,14 +22,20 @@ const About = ({ data }: AboutProps) => {
 			<main className="page">
 				<section className="about-page">
 					<article>
-						<h2>About</h2>
+						<h2>About Us</h2>
 						<p>
-							Forage glossier letterpress heirloom before they sold
-							out you probably haven't heard of them banh mi biodiesel chia.
+							Welcome to our carnivore recipe website, your ultimate destination for mouth-watering meat-based dishes.
+							Our passion for quality meat and exceptional recipes drives us to create a platform where fellow carnivores
+							can explore and enjoy delicious and nutritious meals.
 						</p>
 						<p>
-							Taiyaki tumblr flexitarian jean shorts brunch, aesthetic salvia
-							retro.
+							Our team of culinary experts meticulously crafts each recipe to ensure it not only satisfies your taste buds
+							but also supports a healthy lifestyle. From quick and easy weekday meals to gourmet weekend feasts, we've got
+							you covered.
+						</p>
+						<p>
+							We believe in the power of meat-centric diets to provide essential nutrients and unparalleled flavor. Join us on
+							this gastronomic journey and discover the joys of carnivorous cooking.
 						</p>
 						<Link to="/contact" className="btn">
 							contact
@@ -43,7 +49,7 @@ const About = ({ data }: AboutProps) => {
 					/>
 				</section>
 				<section className="featured-recipes">
-					<h5>Try something new</h5>
+					<h5>Try something</h5>
 					<RecipesList recipes={recipes} />
 				</section>
 			</main>
