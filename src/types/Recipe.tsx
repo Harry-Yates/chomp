@@ -1,5 +1,3 @@
-// TypeScript definitions
-
 import type { IGatsbyImageData } from 'gatsby-plugin-image';
 
 interface Content {
