@@ -4,13 +4,13 @@ import { graphql } from "gatsby"
 import RecipesList from "../components/RecipesList"
 import type { Recipe } from "../types/Recipe";
 
-interface ContactProps {
-	data: {
-		allContentfulRecipe: {
-			nodes: Recipe[];
-		};
-	};
-}
+// interface ContactProps {
+// 	data: {
+// 		allContentfulRecipe: {
+// 			nodes: Recipe[];
+// 		};
+// 	};
+// }
 
 const Contact = ({ data }: ContactProps) => {
 	const recipes = data.allContentfulRecipe.nodes
