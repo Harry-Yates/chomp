@@ -1,3 +1,4 @@
+
 import type { IGatsbyImageData } from 'gatsby-plugin-image';
 
 interface Content {
@@ -24,7 +25,9 @@ export interface Recipe {
 }
 
 export interface RecipesQueryResult {
-	contentfulRecipe: Recipe;
+	allContentfulRecipe: {
+		nodes: Recipe[];
+	};
 }
 
 export interface RecipesProps {
