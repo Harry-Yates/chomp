@@ -12,6 +12,7 @@ const query = graphql`
         title
         cookTime
         prepTime
+        calories
         content {
           tags
         }

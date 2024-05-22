@@ -71,6 +71,7 @@ export const query = graphql`
         title
         cookTime
         prepTime
+		calories
         image {
           gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
         }

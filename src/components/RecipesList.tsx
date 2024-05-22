@@ -8,7 +8,7 @@ const RecipesList = ({ recipes }: RecipesProps) => {
     return (
         <div className='recipes-list'>
             {recipes.map((recipe) => {
-                const { id, title, image, prepTime, cookTime } = recipe;
+                const { id, title, image, prepTime, cookTime, calories } = recipe;
                 const pathToImage = getImage(image as IGatsbyImageData);
                 const slug = title.replace(/\s+/g, '-').toLowerCase();
 
@@ -22,7 +22,7 @@ const RecipesList = ({ recipes }: RecipesProps) => {
                             </div>
                         )}
                         <h5>{title}</h5>
-                        <p>Prep : {prepTime} min | Cook : {cookTime} min</p>
+                        <p>Prep: {prepTime}m | Cook: {cookTime}m | {calories} cal/portion</p>
                     </Link>
                 );
             })}

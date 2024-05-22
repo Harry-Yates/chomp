@@ -20,6 +20,7 @@ export interface Recipe {
 	image?: IGatsbyImageData;
 	featured: boolean;
 	prepTime: number;
+	calories: number;
 	content: Content;
 }
 
@@ -35,4 +36,8 @@ export interface RecipesProps {
 
 export interface PageContext {
 	tag: string;
+}
+
+export interface RecipesQueryResult {
+	contentfulRecipe: Recipe;
 }

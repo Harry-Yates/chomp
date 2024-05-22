@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql, Link } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import { BsClockHistory, BsClock, BsPeople } from "react-icons/bs";
+import { BsClockHistory, BsClock, BsPeople, BsCalculator } from "react-icons/bs";
 import Layout from "../components/Layout";
 import type { RecipesQueryResult } from "../types/Recipe";
 // import SEO from "../components/SEO";
@@ -12,6 +12,7 @@ const RecipeTemplate = ({ data }: { data: RecipesQueryResult }) => {
         cookTime,
         content,
         prepTime,
+        calories,
         servings,
         description: { description },
         image,
@@ -53,6 +54,11 @@ const RecipeTemplate = ({ data }: { data: RecipesQueryResult }) => {
                                     <BsPeople />
                                     <h5>serving</h5>
                                     <p>{servings}</p>
+                                </article>
+                                <article>
+                                    <BsCalculator />
+                                    <h5>calories</h5>
+                                    <p>{calories}</p>
                                 </article>
                             </div>
                             {/* tags */}
@@ -123,6 +129,7 @@ export const query = graphql`
         description
       }
       prepTime
+      calories
       servings
       image {
         gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG)
