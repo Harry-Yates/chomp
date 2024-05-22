@@ -5,6 +5,7 @@ import RecipesList from "../components/RecipesList";
 import Layout from "../components/Layout";
 // import SEO from "../components/SEO";
 import type { RecipesQueryResult, PageContext } from "../types/Recipe";
+import SEO from "../components/SEO";
 
 const TagTemplate = ({ data, pageContext }: PageProps<RecipesQueryResult, PageContext>) => {
 
@@ -17,7 +18,7 @@ const TagTemplate = ({ data, pageContext }: PageProps<RecipesQueryResult, PageCo
 
   return (
     <Layout>
-      {/* <SEO title={pageContext.tag} /> */}
+      <SEO title={pageContext.tag} />
       <main className="page">
         <h2 style={{ textTransform: 'capitalize' }}>{toSentenceCase(pageContext.tag)}</h2>
         <div className="tag-recipes">
