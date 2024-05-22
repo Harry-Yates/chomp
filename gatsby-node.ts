@@ -2,12 +2,6 @@ import type { GatsbyNode } from "gatsby";
 import path from "node:path";
 import type { RecipesQueryResult } from "./src/types/Recipe";
 
-interface RecipeNode {
-	content: {
-		tags: string[];
-	};
-}
-
 export const createPages: GatsbyNode["createPages"] = async ({
 	graphql,
 	actions,
@@ -35,6 +29,7 @@ export const createPages: GatsbyNode["createPages"] = async ({
 	for (const recipe of recipes) {
 		for (const tag of recipe.content.tags) {
 			const tagSlug = tag.replace(/\s+/g, "-").toLowerCase();
+
 			createPage({
 				path: `/tags/${tagSlug}`,
 				component: path.resolve("src/template/tag-template.tsx"),

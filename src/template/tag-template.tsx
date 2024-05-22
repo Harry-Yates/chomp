@@ -7,12 +7,19 @@ import Layout from "../components/Layout";
 import type { RecipesQueryResult, PageContext } from "../types/Recipe";
 
 const TagTemplate = ({ data, pageContext }: PageProps<RecipesQueryResult, PageContext>) => {
+
   const recipes = data.allContentfulRecipe.nodes;
+
+  const toSentenceCase = (str: string) => {
+    if (!str) return '';
+    return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+  };
+
   return (
     <Layout>
       {/* <SEO title={pageContext.tag} /> */}
       <main className="page">
-        <h2>{pageContext.tag}</h2>
+        <h2 style={{ textTransform: 'capitalize' }}>{toSentenceCase(pageContext.tag)}</h2>
         <div className="tag-recipes">
           <RecipesList recipes={recipes} />
         </div>
