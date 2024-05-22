@@ -22,7 +22,7 @@ const RecipesList = ({ recipes }: RecipesProps) => {
                             </div>
                         )}
                         <h5>{title}</h5>
-                        <p>Prep: {prepTime}m | Cook: {cookTime}m | {calories} cal/portion</p>
+                        <p>Prep: {prepTime}m | Cook: {cookTime}m | {calories} cal</p>
                     </Link>
                 );
             })}
