@@ -52,7 +52,7 @@ const Contact = ({ data }: ContactProps) => {
 					</article>
 				</section>
 				<section className="featured-recipes">
-					<h5>Try something new</h5>
+					<h5>Explore Recipes</h5>
 					<RecipesList recipes={recipes} />
 				</section>
 			</main>

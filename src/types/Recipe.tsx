@@ -1,14 +1,13 @@
-
 import type { IGatsbyImageData } from 'gatsby-plugin-image';
 
-interface Content {
+export interface Content {
 	tags: string[];
 	instructions: string[];
 	ingredients: string[];
 	tools: string[];
 }
 
-interface Description {
+export interface Description {
 	description: string;
 }
 
@@ -32,4 +31,8 @@ export interface RecipesQueryResult {
 
 export interface RecipesProps {
 	recipes: Recipe[];
+}
+
+export interface PageContext {
+	tag: string;
 }
