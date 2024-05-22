@@ -3,7 +3,7 @@ import Layout from "../components/Layout"
 import { graphql, Link } from "gatsby"
 import setupTags from "../utils/setupTags"
 import type { RecipesQueryResult } from "../types/Recipe"
-// import SEO from "../components/SEO"
+import SEO from "../components/SEO"
 
 const Tags = ({ data }: { data: RecipesQueryResult }) => {
 	const recipes = data.allContentfulRecipe.nodes;
@@ -11,7 +11,7 @@ const Tags = ({ data }: { data: RecipesQueryResult }) => {
 
 	return (
 		<Layout>
-			{/* <SEO title="Tags" /> */}
+			<SEO title="Tags" />
 			<main className="page">
 				<h2>Discover by tag</h2>
 				<section className="tags-page">

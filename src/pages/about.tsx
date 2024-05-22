@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image";
 import RecipesList from "../components/RecipesList";
 import type { RecipesQueryResult } from "../types/Recipe";
+import SEO from "../components/SEO";
 
 
 const About = ({ data }: { data: RecipesQueryResult }) => {
@@ -11,7 +12,7 @@ const About = ({ data }: { data: RecipesQueryResult }) => {
 
 	return (
 		<Layout>
-			{/* <SEO title="About" /> */}
+			<SEO title="About" />
 			<main className="page">
 				<section className="about-page">
 					<article>

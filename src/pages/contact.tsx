@@ -3,20 +3,22 @@ import Layout from "../components/Layout"
 import { graphql } from "gatsby"
 import RecipesList from "../components/RecipesList"
 import type { Recipe } from "../types/Recipe";
+import SEO from "../components/SEO";
 
-// interface ContactProps {
-// 	data: {
-// 		allContentfulRecipe: {
-// 			nodes: Recipe[];
-// 		};
-// 	};
-// }
+interface ContactProps {
+	data: {
+		allContentfulRecipe: {
+			nodes: Recipe[];
+		};
+	};
+}
 
 const Contact = ({ data }: ContactProps) => {
 	const recipes = data.allContentfulRecipe.nodes
 
 	return (
 		<Layout>
+			<SEO title="Contact" />
 			<main className="page">
 				<section className="contact-page">
 					<article className="contact-info">

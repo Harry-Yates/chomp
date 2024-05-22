@@ -4,7 +4,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { BsClockHistory, BsClock, BsPeople, BsCalculator } from "react-icons/bs";
 import Layout from "../components/Layout";
 import type { RecipesQueryResult } from "../types/Recipe";
-// import SEO from "../components/SEO";
+import SEO from "../components/SEO";
 
 const RecipeTemplate = ({ data }: { data: RecipesQueryResult }) => {
     const {
@@ -23,7 +23,7 @@ const RecipeTemplate = ({ data }: { data: RecipesQueryResult }) => {
 
     return (
         <Layout>
-            {/* <SEO title={title} description={description} /> */}
+            <SEO title={title} description={description} />
             <main className="page">
                 <div className="recipe-page">
                     {/* hero */}

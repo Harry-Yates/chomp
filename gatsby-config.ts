@@ -29,6 +29,7 @@ const config: GatsbyConfig = {
 				accessToken: process.env.CONTENTFUL_API_KEY,
 			},
 		},
+		"gatsby-plugin-react-helmet",
 	],
 };
 
