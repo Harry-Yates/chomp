@@ -393,11 +393,11 @@ form>*:last-child {
 }
 
 /*#########*/
-/* END OF GLOBALS */
+/*/ END OF GLOBALS */
 /*#########*/
 
 /*#########*/
-/* Navbar */
+/*/ Navbar */
 /*#########*/
 .navbar {
   display: flex;
@@ -522,7 +522,7 @@ form>*:last-child {
 }
 
 /*#########*/
-/* Footer */
+/*/ Footer */
 /*#########*/
 .page-footer {
   text-align: center;
@@ -539,7 +539,7 @@ form>*:last-child {
 }
 
 /*#########*/
-/* 404 */
+/*/ 404 */
 /*#########*/
 .error-page {
   display: flex;
@@ -557,7 +557,7 @@ form>*:last-child {
 
 
 /*#########*/
-/* Contact */
+/*/ Contact */
 /*#########*/
 
 .contact-page {
@@ -574,7 +574,7 @@ form>*:last-child {
 }
 
 /*#########*/
-/* About */
+/*/ About */
 /*#########*/
 
 .about-page h2 {
@@ -603,6 +603,7 @@ form>*:last-child {
   .about-img {
     height: 100%;
   }
+
 }
 
 .featured-recipes>h5 {
@@ -611,7 +612,7 @@ form>*:last-child {
 }
 
 /*#########*/
-/* Hero */
+/*/ Hero */
 /*#########*/
 
 .hero-img {
@@ -648,10 +649,11 @@ form>*:last-child {
     font-size: 4rem;
     margin-bottom: 0;
   }
+
 }
 
 /*#########*/
-/* Recipes */
+/*/ Recipes */
 /*#########*/
 .recipes-container {
   display: grid;
@@ -675,6 +677,7 @@ form>*:last-child {
 .tags-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
 }
 
 .tags-container h4 {
@@ -725,6 +728,7 @@ form>*:last-child {
   .recipe-img {
     height: 10rem;
   }
+
 }
 
 @media screen and (min-width: 992px) {
@@ -752,7 +756,7 @@ form>*:last-child {
 
   .tags-list {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
