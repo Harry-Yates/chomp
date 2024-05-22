@@ -10,9 +10,10 @@ const RecipesList = ({ recipes }: RecipesProps) => {
             {recipes.map((recipe) => {
                 const { id, title, image, prepTime, cookTime } = recipe;
                 const pathToImage = getImage(image as IGatsbyImageData);
+                const slug = title.replace(/\s+/g, '-').toLowerCase();
 
                 return (
-                    <Link className="recipe" to={`/${title}`} key={id}>
+                    <Link className="recipe" to={`/${slug}`} key={id}>
                         {pathToImage ? (
                             <GatsbyImage image={pathToImage} className='recipe-img' alt={title} />
                         ) : (

@@ -97,7 +97,8 @@
   /* rest */
   /* --backgroundColor: var(--grey-0); */
   --backgroundColor: var(--grey-1100);
-  --textColor: var(--grey-1000);
+  /* --textColor: var(--grey-1000); */
+  --textColor: var(--grey-100);
   --borderRadius: 0.25rem;
   --letterSpacing: 1px;
   --transition: 0.3s ease-in-out all;

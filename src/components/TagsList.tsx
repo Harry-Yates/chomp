@@ -2,7 +2,6 @@ import React from 'react';
 import type { RecipesProps } from '../types/Recipe';
 import setupTags from "../utils/setupTags"
 import { Link } from "gatsby"
-import slugify from "slugify"
 
 const TagsList = ({ recipes }: RecipesProps) => {
     const newTags = setupTags({ recipes })
@@ -13,7 +12,7 @@ const TagsList = ({ recipes }: RecipesProps) => {
             <div className="tags-list">
                 {newTags.map((tag) => {
                     const [text, value] = tag
-                    const slug = slugify(text, { lower: true })
+                    const slug = text.replace(/\s+/g, '-').toLowerCase();
 
                     return (
                         <Link to={`/tags/${slug}`} key={text}>
