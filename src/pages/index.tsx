@@ -17,6 +17,7 @@ const Home = () => {
 						</div>
 					</div>
 				</header>
+				<h4>Today's Top Picks</h4>
 				<AllRecipes />
 			</main>
 		</Layout>

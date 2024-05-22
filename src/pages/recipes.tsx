@@ -7,6 +7,7 @@ const Recipes = () => {
 		<Layout>
 			<div className="about-heading">
 				<main className="page">
+					<h2>Explore Recipes</h2>
 					<AllRecipes />
 				</main>
 			</div>

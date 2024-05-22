@@ -13,7 +13,7 @@ const Tags = ({ data }: { data: RecipesQueryResult }) => {
 		<Layout>
 			{/* <SEO title="Tags" /> */}
 			<main className="page">
-				<h2>Tags</h2>
+				<h2>Discover by tag</h2>
 				<section className="tags-page">
 					{newTags.map((tag) => {
 						const [text, value] = tag
