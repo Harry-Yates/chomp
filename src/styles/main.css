@@ -449,7 +449,7 @@ form>*:last-child {
   text-align: center;
   font-size: 1.5rem;
   text-transform: capitalize;
-  color: var(--grey-1000);
+  color: var(--grey-100);
   letter-spacing: var(--letterSpacing);
   padding: 1rem 0;
   border-top: 1px solid var(--primary-500);

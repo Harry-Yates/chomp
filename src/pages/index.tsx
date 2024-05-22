@@ -12,8 +12,8 @@ const Home = () => {
 					</StaticImage>
 					<div className="hero-container">
 						<div className="hero-text">
-							<h1>Recipes</h1>
-							<h4>Latest</h4>
+							<h1>Chomp</h1>
+							<h4>Feast on Flavor</h4>
 						</div>
 					</div>
 				</header>

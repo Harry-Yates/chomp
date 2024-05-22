@@ -30,6 +30,7 @@ const AllRecipes = () => {
 
   return (
     <div>
+      <h2>Recipes</h2>
       <TagsList recipes={recipes} />
       <RecipesList recipes={recipes} />
     </div>
